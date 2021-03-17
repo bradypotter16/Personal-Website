@@ -1,0 +1,159 @@
+:root
+{
+
+    --darkest-blue: #12232E;
+    --dark-blue: #203647;
+    --lighter-blue: #007CC7;
+    --lightest-blue: #4DA8DA;
+    --nearly-white: #EEFBFB;
+
+}
+
+nav
+{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 6vh;
+    background-color: var(--darkest-blue);
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    
+}
+
+.nav-links
+{
+
+    display: flex;
+    background-color: var(--darkest-blue);
+    justify-content: space-around;
+    width: 20%;
+
+}
+
+.nav-button
+{
+
+    color: var(--darkest-blue);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+    background-color: var(--darkest-blue);
+    text-transform: uppercase;
+    color: var(--nearly-white);
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+.nav-links a
+{
+
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+.nav-links li
+{
+
+    list-style: none;
+
+}
+
+.mobileNav
+{
+
+    display: none;
+    cursor: pointer;
+
+}
+
+.mobileNav div
+{
+
+    width: 25px;
+    height: 3px;
+    background-color: var(--nearly-white);
+    margin: 5px;
+
+}
+
+@media screen and (max-width:1024px)
+{
+
+    body
+    {
+
+        overflow-x: hidden!important;
+
+    }
+
+    .nav-links
+    {
+
+        position: fixed;
+        right: 0px;
+        height: 80vh;
+        top: 7vh;
+        background-color: var(--darkest-blue);
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+
+    }
+
+    .nav-links li
+    {
+
+        opacity: 0;
+
+    }
+
+    .mobileNav
+    {
+
+        display: block;
+
+    }
+
+}
+
+.nav-active
+{
+
+    transform: translateX(0%);
+
+}
+
+@keyframes navLinkFade
+{
+
+    from
+    {
+
+        opacity: 0;
+        transform: translateX(50px);
+
+    }
+
+    to 
+    {
+
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+    
+}

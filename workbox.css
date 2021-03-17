@@ -1,0 +1,59 @@
+:root
+{
+
+    --darkest-blue: #12232E;
+    --dark-blue: #203647;
+    --lighter-blue: #007CC7;
+    --lightest-blue: #4DA8DA;
+    --nearly-white: #EEFBFB;
+
+}
+
+.work-container
+{
+
+    display: block;
+
+}
+
+.work-box
+{
+
+    background-color: var(--lighter-blue);
+
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    width: 60%;
+    margin-right: 30px;
+
+}
+
+.work-box img
+{
+
+    margin-right: 10px;
+    display: flex;
+    padding: 10px;
+
+}
+
+.box-text
+{
+
+    display: block;
+
+}
+
+@media screen and (max-width:1024px)
+{
+
+    .work-box
+    {
+
+        width: 100%;
+        margin-left: 0%;
+
+    }
+
+}

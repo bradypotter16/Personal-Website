@@ -1,0 +1,122 @@
+:root
+{
+
+    --darkest-blue: #12232E;
+    --dark-blue: #203647;
+    --lighter-blue: #007CC7;
+    --lightest-blue: #52b6ec;
+    --nearly-white: #EEFBFB;
+    --typing-font: #0080FF;
+
+}
+
+.title-font
+{
+
+    font-family: 'Roboto Mono', monospace;
+    color: var(--nearly-white);
+    font-size: 30px;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 22rem;
+
+}
+
+.typed-text
+{
+
+    color: var(--typing-font);
+
+}
+
+.leader-text
+{
+
+    font-family: 'Poppins', sans-serif;
+    color: var(--nearly-white);
+    text-align: center;
+    margin-top: 18em;
+    margin-bottom: 14em;
+
+}
+
+.work-box-title
+{
+
+    color: var(--nearly-white);
+    font-family: 'Roboto Mono', monospace;
+    font-style: bold;
+    font-weight: 800;
+    font-size: 25px;
+    padding: 10px;
+    display: block;
+    overflow-wrap: break-word;
+
+}
+
+.work-box-content
+{
+
+    font-family: 'Poppins', sans-serif;
+    color: var(--nearly-white);
+    padding: 10px;
+    display: block;
+    font-size: 18px;
+    overflow-wrap: break-word;
+
+}
+
+.work-box-footer
+{
+
+    font-family: 'Poppins', sans-serif;
+    color: var(--nearly-white);
+    font-style: italic;
+    padding-left: 20%;
+    margin-bottom: 5rem;
+    display: block;
+    font-size: 14px;
+
+}
+
+.logo-text
+{
+
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+    text-transform: lowercase;
+    color: var(--nearly-white);
+
+}
+
+.button-text
+{
+
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+    color: var(--nearly-white);
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+@media screen and (max-width:1024px)
+{
+
+    .work-box-footer
+    {
+
+        padding-left: 0;
+
+    }
+
+    .title-font
+    {
+
+        padding-top: 6rem;
+
+    }
+
+}

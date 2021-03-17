@@ -1,0 +1,92 @@
+:root
+{
+
+    --darkest-blue: #12232E;
+    --dark-blue: #203647;
+    --lighter-blue: #007CC7;
+    --lightest-blue: #4DA8DA;
+    --nearly-white: #EEFBFB;
+
+}
+
+*
+{
+
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+
+}
+
+html
+{
+
+    font-size: 100%;
+    color: black;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+
+}
+
+body
+{
+
+    overflow-x: hidden;
+    background-color: var(--darkest-blue);
+
+}
+
+.cursor
+{
+
+    display: inline-block;
+    width: 3px;
+    background-color: var(--nearly-white);
+    margin-left: 0.15rem;
+    animation: blink 1s infinite;
+
+}
+
+@keyframes blink
+{
+
+    0%
+    {
+
+        background-color: var(--nearly-white);
+
+    }
+
+    49%
+    {
+
+        background-color: var(--nearly-white);
+        
+    }
+
+    50%
+    {
+
+        background-color: transparent;
+
+    }
+
+    99%
+    {
+
+        background-color: transparent;
+
+    }
+
+    100%
+    {
+
+        background-color: var(--nearly-white);
+        
+    }
+
+}
